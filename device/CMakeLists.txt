@@ -1,0 +1,12 @@
+set(SOURCES
+    subsystemairpressure.cpp
+    subsystemmotors.cpp
+    devices_manager.cpp
+    subsystemhead.cpp
+    )
+set(HEADERS
+    devices_manager.h
+    subsystemhead.h
+    subsystemairpressure.h
+    subsystemmotors.h
+    )
