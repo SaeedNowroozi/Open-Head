@@ -45,7 +45,8 @@ else()
 endif()
 
 target_link_libraries(untitled48 PRIVATE Qt${QT_VERSION_MAJOR}::Widgets
-   device_Library )
+   device_Library
+   widget_Library)
 
 set_target_properties(untitled48 PROPERTIES
     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com

@@ -16,10 +16,15 @@ qDebug() << "test cmake1\n";
 
 Devices_Manager::~Devices_Manager()
 {
-    delete subair;
-    delete subhead;
-    delete submotor;
+  // delete subair;
+//    delete subhead;
+//    delete submotor;
 }
+
+//Devices_Manager::Devices_Manager()
+//{
+//qDebug() << "test cmake1\n";
+//}
 
 Devices_Manager::Devices_Manager(SubsystemHead *subhead, SubsystemMotors *submotor, SubsystemAirPressure *subair)
 {

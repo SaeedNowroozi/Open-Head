@@ -9,8 +9,6 @@ class Widget_Chart : public QWidget
 public:
     explicit Widget_Chart(QWidget *parent = nullptr);
 
-signals:
-
 };
 
 #endif // WIDGET_CHART_H

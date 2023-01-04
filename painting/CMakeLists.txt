@@ -1,15 +1,14 @@
 find_package(Qt6 COMPONENTS Core REQUIRED)
 #target_link_libraries(Library PRIVATE Qt6::Core)
-
+include_directories(${Qt5Widgets_INCLUDE_DIRS})
 set(SOURCES
-    dpi_manager.cpp
-    png_manager.cpp
+  painting_ground.cpp
     )
 set(HEADERS
-   dpi_manager.h
-    png_manager.h
+    painting_ground.h
     )
 add_library(painting_Library STATIC ${SOURCES} ${HEADERS})
 target_include_directories(painting_Library   PRIVATE Qt6::Core
    PUBLIC HEADERS )
 
+target_link_libraries(painting_Library PRIVATE Qt6::Core)

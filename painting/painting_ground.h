@@ -9,7 +9,7 @@ class Painting_Ground : public QObject
 public:
     explicit Painting_Ground(QObject *parent = nullptr);
 
-signals:
+
 
 };
 

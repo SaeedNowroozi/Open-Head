@@ -12,6 +12,7 @@ class Devices_Manager : public QObject
 public:
     explicit Devices_Manager(QObject *parent = nullptr);
     ~Devices_Manager();
+ //   Devices_Manager();
     Devices_Manager(
             SubsystemHead *subhead = nullptr,
             SubsystemMotors *submotor = nullptr,
