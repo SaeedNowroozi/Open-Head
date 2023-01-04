@@ -1,3 +1,6 @@
+find_package(Qt6 COMPONENTS Core REQUIRED)
+#target_link_libraries(Library PRIVATE Qt6::Core)
+
 set(SOURCES
     subsystemairpressure.cpp
     subsystemmotors.cpp
@@ -10,3 +13,7 @@ set(HEADERS
     subsystemairpressure.h
     subsystemmotors.h
     )
+add_library(device_Library STATIC ${SOURCES} ${HEADERS})
+target_include_directories(device_Library  PRIVATE Qt6::Core
+   PUBLIC HEADERS )
+

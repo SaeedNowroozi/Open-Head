@@ -11,7 +11,7 @@
 Devices_Manager::Devices_Manager(QObject *parent)
     : QObject{parent}
 {
-qDebug() << "test\n";
+qDebug() << "test cmake1\n";
 }
 
 Devices_Manager::~Devices_Manager()

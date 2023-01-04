@@ -1,3 +1,6 @@
+find_package(Qt6 COMPONENTS Core REQUIRED)
+#target_link_libraries(Library PRIVATE Qt6::Core)
+
 set(SOURCES
     logger.cpp
     )
@@ -6,3 +9,7 @@ set(HEADERS
     logger.h
     singleton.h
     )
+add_library(logger_Library STATIC ${SOURCES} ${HEADERS})
+target_include_directories(logger_Library  PRIVATE Qt6::Core
+   PUBLIC HEADERS )
+

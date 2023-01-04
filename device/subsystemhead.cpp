@@ -21,7 +21,7 @@ void SubsystemHead::StopHead() const
 
 }
 
-bool SubsystemHead::MgnHead(QList<QSharedPointer<Model_Data *> > mod)
-{
-    return false;
-}
+//bool SubsystemHead::MgnHead(QList<QSharedPointer<Model_Data *> > mod)
+//{
+//    return false;
+//}
