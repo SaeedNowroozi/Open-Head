@@ -44,9 +44,32 @@ else()
     endif()
 endif()
 
+include(FetchContent)
+
+ FetchContent_Declare(
+    spdlog
+    GIT_REPOSITORY  https://github.com/gabime/spdlog
+    GIT_TAG  v1.11.0
+    )
+FetchContent_MakeAvailable(spdlog)
+
+include(FetchContent)
+
+ FetchContent_Declare(
+    fmt
+    GIT_REPOSITORY  https://github.com/fmtlib/fmt
+    GIT_TAG  9.1.0
+    )
+FetchContent_MakeAvailable(fmt)
+
+#target_link_libraries(
+#   name_library )
+
 target_link_libraries(untitled48 PRIVATE Qt${QT_VERSION_MAJOR}::Widgets
    device_Library
-   widget_Library)
+   widget_Library
+   spdlog::spdlog_header_only
+   fmt::fmt)
 
 set_target_properties(untitled48 PROPERTIES
     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com

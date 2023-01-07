@@ -3,6 +3,7 @@
 
 #include <QObject>
 
+
 class Shape : public QObject
 {
     Q_OBJECT
