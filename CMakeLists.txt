@@ -62,14 +62,21 @@ include(FetchContent)
     )
 FetchContent_MakeAvailable(fmt)
 
-#target_link_libraries(
-#   name_library )
+include(FetchContent)
+
+FetchContent_Declare(
+    Catch2
+    GIT_REPOSITORY  https://github.com/catchorg/Catch2
+    GIT_TAG  v3.2.1
+    )
+FetchContent_MakeAvailable(Catch2)
 
 target_link_libraries(untitled48 PRIVATE Qt${QT_VERSION_MAJOR}::Widgets
    device_Library
    widget_Library
    spdlog::spdlog_header_only
-   fmt::fmt)
+   fmt::fmt
+   PRIVATE Catch2::Catch2WithMain)
 
 set_target_properties(untitled48 PROPERTIES
     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com
