@@ -1,7 +1,6 @@
 #include "mainwindow.h"
 
 #include <QApplication>
-
 #include <spdlog/spdlog.h>
 #include <fmt/format.h>
 int main(int argc, char *argv[])
