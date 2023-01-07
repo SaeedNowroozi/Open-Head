@@ -2,10 +2,12 @@ find_package(Qt6 COMPONENTS Core REQUIRED)
 #target_link_libraries(Library PRIVATE Qt6::Core)
 include_directories(${Qt5Widgets_INCLUDE_DIRS})
 set(SOURCES
-    plotting_data.h
+    plotting_data.cpp
+     monitor.cpp
     )
 set(HEADERS
     plotting_data.h
+    monitor.h
     )
 
 add_library(plotting_Library STATIC ${SOURCES} ${HEADERS})
