@@ -11,6 +11,8 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+option(ENABLE_TESTING "Test catch 2 Exation " OFF)
+
 find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
 
@@ -97,3 +99,4 @@ add_subdirectory(painting)
 add_subdirectory(plotting)
 add_subdirectory(png)
 add_subdirectory(turn-on-of)
+add_subdirectory(test)
