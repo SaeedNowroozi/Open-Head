@@ -8,10 +8,15 @@ find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
 set(SOURCES
     widget_chart.cpp
     aboutdialog.cpp
+    ribbon.cpp
+    ribbonform.cpp
     )
 set(HEADERS
     widget_chart.h
     aboutdialog.h
+    ribbon.h
+    ribbonform.h
+    ribbonform.ui
     )
 
 add_library(widget_Library STATIC ${SOURCES} ${HEADERS})
