@@ -3,6 +3,10 @@
 #include <QApplication>
 #include <spdlog/spdlog.h>
 #include <fmt/format.h>
+#include <boost/any.hpp>
+#include <list>
+
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);

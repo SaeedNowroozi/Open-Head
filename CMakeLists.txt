@@ -46,6 +46,8 @@ else()
     endif()
 endif()
 
+set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
+include(Docs)
 include(FetchContent)
 
  FetchContent_Declare(
@@ -55,7 +57,8 @@ include(FetchContent)
     )
 FetchContent_MakeAvailable(spdlog)
 
-include(FetchContent)
+#include(FetchContent)
+
 
  FetchContent_Declare(
     fmt
@@ -64,7 +67,7 @@ include(FetchContent)
     )
 FetchContent_MakeAvailable(fmt)
 
-include(FetchContent)
+#include(FetchContent)
 
 FetchContent_Declare(
     Catch2
@@ -100,3 +103,4 @@ add_subdirectory(plotting)
 add_subdirectory(png)
 add_subdirectory(turn-on-of)
 add_subdirectory(test)
+
