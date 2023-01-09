@@ -14,8 +14,15 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+private slots:
+
+    void onAboutActionTriggered();
 
 private:
     Ui::MainWindow *ui;
+    QMenu *m_helpMenu = nullptr;
+    QAction *m_aboutAction = nullptr;
+    QAction *m_disableDemoModeAction = nullptr;
+    QAction *m_enableDemoModeAction = nullptr;
 };
 #endif // MAINWINDOW_H
