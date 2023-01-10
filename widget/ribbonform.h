@@ -15,6 +15,9 @@ public:
     explicit RibbonForm(QWidget *parent = nullptr);
     ~RibbonForm();
 
+private slots:
+    void on_Circlebtn_clicked();
+
 private:
     Ui::RibbonForm *ui;
 };

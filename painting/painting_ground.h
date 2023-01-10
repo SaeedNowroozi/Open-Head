@@ -3,15 +3,16 @@
 
 #include <QObject>
 
+#include <QtWidgets/QGraphicsItem>
 #include <QtWidgets/QGraphicsView>
 
 
 
-class Painting_Ground : public QGraphicsView
+class Painting_Ground : public QGraphicsItem
 {
     Q_OBJECT
 public:
-    explicit Painting_Ground(QWidget *parent = nullptr);
+    explicit Painting_Ground(QGraphicsItem *parent = nullptr);
 
 
 };

@@ -12,3 +12,9 @@ RibbonForm::~RibbonForm()
 {
     delete ui;
 }
+
+void RibbonForm::on_Circlebtn_clicked()
+{
+
+}
+

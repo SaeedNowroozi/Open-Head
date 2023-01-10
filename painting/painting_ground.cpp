@@ -2,8 +2,8 @@
 
 #include <QtWidgets/QGraphicsScene>
 
-Painting_Ground::Painting_Ground(QWidget *parent)
-    : QGraphicsView(new QGraphicsScene, parent)
+Painting_Ground::Painting_Ground(QGraphicsItem *parent):QGraphicsItem(parent)
+
 {
 
 }
