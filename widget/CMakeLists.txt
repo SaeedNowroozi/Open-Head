@@ -8,13 +8,13 @@ find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
 set(SOURCES
     widget_chart.cpp
     aboutdialog.cpp
-    ribbon.cpp
+#    ribbon.cpp
     ribbonform.cpp
     )
 set(HEADERS
     widget_chart.h
     aboutdialog.h
-    ribbon.h
+#    ribbon.h
     ribbonform.h
     ribbonform.ui
     )
