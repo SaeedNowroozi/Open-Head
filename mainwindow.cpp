@@ -7,10 +7,12 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
-    RibbonForm *bbb = new  RibbonForm(this);
+  //  RibbonForm *bbb = new  RibbonForm(this);
 
     ui->setupUi(this);
-    ui->gridLayout->addWidget(bbb,0,1);
+    //ui->gridLayout->addWidget(bbb,0,1);
+
+    ui->widget_2->setStyleSheet("background-color: rgb(109, 241, 201)");
 
     m_helpMenu = menuBar()->addMenu(tr("&Help"));
 

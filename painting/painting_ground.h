@@ -3,14 +3,15 @@
 
 #include <QObject>
 
-#include <sepol/sepol.h>
+#include <QtWidgets/QGraphicsView>
 
 
-class Painting_Ground : public QObject
+
+class Painting_Ground : public QGraphicsView
 {
     Q_OBJECT
 public:
-    explicit Painting_Ground(QObject *parent = nullptr);
+    explicit Painting_Ground(QWidget *parent = nullptr);
 
 
 };

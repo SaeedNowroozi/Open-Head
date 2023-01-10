@@ -1,7 +1,9 @@
 #include "painting_ground.h"
 
-Painting_Ground::Painting_Ground(QObject *parent)
-    : QObject{parent}
+#include <QtWidgets/QGraphicsScene>
+
+Painting_Ground::Painting_Ground(QWidget *parent)
+    : QGraphicsView(new QGraphicsScene, parent)
 {
 
 }
