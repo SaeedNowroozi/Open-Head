@@ -6,12 +6,14 @@ set(SOURCES
     subsystemmotors.cpp
     devices_manager.cpp
     subsystemhead.cpp
+    control_motor.cpp
     )
 set(HEADERS
     devices_manager.h
     subsystemhead.h
     subsystemairpressure.h
     subsystemmotors.h
+    control_motor.h
     )
 add_library(device_Library STATIC ${SOURCES} ${HEADERS})
 target_include_directories(device_Library  PRIVATE Qt6::Core
