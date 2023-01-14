@@ -222,6 +222,7 @@ class Control_Motor
 {
 public:
     Control_Motor( int spin );
+     Control_Motor();
         void init1();
 
         void setMicroSteps1( int microSteps );

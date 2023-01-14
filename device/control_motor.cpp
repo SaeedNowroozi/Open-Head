@@ -1,6 +1,6 @@
 #include "control_motor.h"
 #include <cmath>
-Control_Motor::Control_Motor(int spin)
+Control_Motor::Control_Motor()
 {
 
 }
