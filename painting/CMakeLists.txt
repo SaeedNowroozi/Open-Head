@@ -5,11 +5,13 @@ set(SOURCES
 #  painting_ground.cpp
   shape.cpp
   ground.cpp
+  factoryshape.cpp
     )
 set(HEADERS
 #    painting_ground.h
     shape.h
     ground.h
+    factoryshape.h
     )
 add_library(painting_Library STATIC ${SOURCES} ${HEADERS})
 target_include_directories(painting_Library   PRIVATE Qt6::Core

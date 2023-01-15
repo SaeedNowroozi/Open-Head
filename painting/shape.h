@@ -2,7 +2,7 @@
 #define SHAPE_H
 
 #include <QObject>
-
+#include "factoryshape.h"
 
 class Shape : public QObject
 {
@@ -14,7 +14,7 @@ signals:
 
 };
 
-class Triangle : public Shape
+class Triangle : public Shape, public FactoryShape
 {
     Q_OBJECT
 public:
@@ -22,8 +22,12 @@ public:
 
 signals:
 
+
+     // FactoryShape interface
+protected:
+     void addElement() override;
 };
-class Circle : public Shape
+class Circle : public Shape, public FactoryShape
 {
     Q_OBJECT
 public:
@@ -31,8 +35,12 @@ public:
 
 signals:
 
+
+     // FactoryShape interface
+protected:
+     void addElement() override;
 };
-class Rectangle : public Shape
+class Rectangle : public Shape, public FactoryShape
 {
     Q_OBJECT
 public:
@@ -40,5 +48,9 @@ public:
 
 signals:
 
+
+     // FactoryShape interface
+protected:
+     void addElement() override;
 };
 #endif // SHAPE_H

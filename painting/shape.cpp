@@ -5,3 +5,18 @@ Shape::Shape(QObject *parent)
 {
 
 }
+
+
+void Triangle::addElement()
+{
+}
+
+
+void Circle::addElement()
+{
+}
+
+
+void Rectangle::addElement()
+{
+}
