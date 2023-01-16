@@ -9,6 +9,7 @@ Model_Data::Model_Data(QObject *parent)
 
 int Model_Data::rowCount(const QModelIndex &parent) const
 {
+    return 0;
 }
 
 QVariant Model_Data::data(const QModelIndex &index, int role) const
