@@ -2,7 +2,7 @@
 #define FACTORYSHAPE_H
 
 #include <QObject>
-
+//Factory Pateern
 class FactoryShape
 {
 
