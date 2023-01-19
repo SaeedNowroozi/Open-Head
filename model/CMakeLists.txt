@@ -3,9 +3,11 @@ find_package(Qt6 COMPONENTS Core REQUIRED)
 include_directories(${Qt5Widgets_INCLUDE_DIRS})
 set(SOURCES
     model_data.cpp
+    zaar_alghorithm.cpp
       )
 set(HEADERS
  model_data.h
+ zaar_alghorithm.h
     )
 
 add_library(model_Library STATIC ${SOURCES} ${HEADERS})
