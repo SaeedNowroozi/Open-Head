@@ -13,6 +13,7 @@ public:
     Ground();
 private:
     std::vector<std::unique_ptr<Shape>> shapes;
+    //
 };
 
 #endif // GROUND_H
