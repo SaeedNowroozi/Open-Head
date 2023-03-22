@@ -2,6 +2,7 @@
 #define FACTORYSHAPE_H
 
 #include <QObject>
+#include<QPainter>
 //Factory Pateern
 class FactoryShape
 {
