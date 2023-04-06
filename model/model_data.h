@@ -5,6 +5,7 @@
 #include <QObject>
 #include <vector>
 #include <tuple>
+#include <memory>
 
 
 class Model_Data : public QAbstractListModel
