@@ -10,6 +10,8 @@
 #include <exception>
 #include <tuple>
 #include <regex>
+#include <thread>
+#include <utility>
 
 class Zaar_alghorithm
 {
