@@ -12,15 +12,15 @@ class Devices_Manager : public QObject
 public:
     explicit Devices_Manager(QObject *parent = nullptr);
     ~Devices_Manager();
- //   Devices_Manager();
+    //   Devices_Manager();
     Devices_Manager(
             SubsystemHead *subhead = nullptr,
             SubsystemMotors *submotor = nullptr,
             SubsystemAirPressure *subair = nullptr);
 protected:
-    SubsystemAirPressure *subair;
-    SubsystemHead *subhead;
-    SubsystemMotors *submotor;
+    static SubsystemAirPressure *subair;
+    static SubsystemHead *subhead;
+    static SubsystemMotors *submotor;
 
 signals:
 

@@ -14,9 +14,9 @@ protected:
     int SpeedUp(int s)const;
     int SpeedDown(int s)const;
 private:
-std::unique_ptr<Control_Motor> motor_Head;
-std::unique_ptr<Control_Motor> motor_X;
-std::unique_ptr<Control_Motor> motor_Y;
+static std::unique_ptr<Control_Motor> motor_Head;
+static std::unique_ptr<Control_Motor> motor_X;
+static std::unique_ptr<Control_Motor> motor_Y;
 
 signals:
 
