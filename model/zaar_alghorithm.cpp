@@ -4,3 +4,8 @@ Zaar_alghorithm::Zaar_alghorithm()
 {
 
 }
+
+
+void Zaar_alghorithm::run()
+{
+}
