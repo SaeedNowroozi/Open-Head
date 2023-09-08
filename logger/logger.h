@@ -8,7 +8,7 @@ class Logger : public QObject
     Q_OBJECT
 public:
     explicit Logger(QObject *parent = nullptr);
-
+    void getmetadata();
 signals:
 
 };

@@ -7,6 +7,7 @@ class Turn_On
 {
 public:
     Turn_On();
+      void powerDown();
 };
 
 #endif // TURN_ON_H

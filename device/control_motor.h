@@ -267,7 +267,6 @@ public:
         void softFree1();
         void free1();
         int getStatus1();
-
 private:
 
         long convert1(unsigned long val);

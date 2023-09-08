@@ -8,6 +8,7 @@ set(SOURCES
     subsystemhead.cpp
     control_motor.cpp
     usbmanager.cpp
+#    control_head.cpp
     )
 set(HEADERS
     devices_manager.h
@@ -16,6 +17,7 @@ set(HEADERS
     subsystemmotors.h
     control_motor.h
     usbmanager.h
+#    control_head.h
     )
 add_library(device_Library STATIC ${SOURCES} ${HEADERS})
 find_package(Qt6 COMPONENTS Core REQUIRED)

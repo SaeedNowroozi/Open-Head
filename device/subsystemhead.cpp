@@ -11,15 +11,15 @@ QVector<int> SubsystemHead::select_Nuzzle(int Nuzzle) const
 
 }
 
-void SubsystemHead::FireHead() const
-{
+//bool SubsystemHead::FireHead() const
+//{
 
-}
+//}
 
-void SubsystemHead::StopHead() const
-{
+//void SubsystemHead::StopHead() const
+//{
 
-}
+//}
 
 //bool SubsystemHead::MgnHead(QList<QSharedPointer<Model_Data *> > mod)
 //{

@@ -5,3 +5,8 @@ Logger::Logger(QObject *parent)
 {
 
 }
+
+void Logger::getmetadata()
+{
+
+}
