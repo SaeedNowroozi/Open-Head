@@ -12,6 +12,8 @@
 #include <regex>
 #include <thread>
 #include <utility>
+#include <unordered_map>
+#include <map>
 
 class Zaar_alghorithm
 {

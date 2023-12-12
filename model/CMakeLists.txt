@@ -4,10 +4,12 @@ include_directories(${Qt5Widgets_INCLUDE_DIRS})
 set(SOURCES
     model_data.cpp
     zaar_alghorithm.cpp
+    pixel_format.cpp
       )
 set(HEADERS
  model_data.h
  zaar_alghorithm.h
+ pixel_format.h
     )
 
 add_library(model_Library STATIC ${SOURCES} ${HEADERS})
