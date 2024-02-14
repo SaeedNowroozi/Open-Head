@@ -345,3 +345,13 @@ BYTE Control_Motor::Xfer1(BYTE data)
 {
 
 }
+
+void Control_Motor::log_motors()
+{
+
+}
+
+bool Control_Motor::ready_motors()
+{
+
+}

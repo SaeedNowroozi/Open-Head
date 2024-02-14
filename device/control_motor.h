@@ -3,7 +3,10 @@
 
 
 #include <QByteArray>
-
+#include <mutex>
+#include <thread>
+#include <condition_variable>
+#include <vector>
 // constant definitions for overcurrent thresholds. Write these values to
 //  register dSPIN_OCD_TH to set the level at which an overcurrent even occurs.
 #define OCD_TH_375mA  0x00
@@ -285,6 +288,14 @@ private:
         BYTE Xfer1( BYTE data );
 
         int _spain;
+
+        private:
+     std::mutex mutex;
+     std::vector<std::thread> thread;
+     std::condition_variable cond;
+public:
+     void log_motors();
+     bool ready_motors();
 };
 
 #endif // CONTROL_MOTOR_H
